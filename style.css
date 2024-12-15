@@ -1,3 +1,10 @@
+
+
+/* Stylesheet for Oden-landing-page project. Created by git user YogscastLewis, 2024. */
+
+
+/* fonts used */
+
 @font-face {
     font-family: roboto;
     src: url(./fonts/Roboto-Medium.ttf);
@@ -22,6 +29,9 @@
     font-family: robotom;
     src: url(./fonts/Roboto-Medium.ttf);
 }
+
+
+/* main section */
 
 * {
     margin: 0;
@@ -71,12 +81,13 @@ body{
     padding: 100px 250px;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
 }
 
 .heroleft {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     max-width: 700px;
 }
 
@@ -87,6 +98,8 @@ body{
 
 .heroleft div {
     font-family: robotom;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 18px;
 }
 
 .imageplaceholder {
@@ -112,10 +125,34 @@ button {
     display: flex;
     flex-direction: inherit;
     align-items: center;
+    margin: 40px;
+    margin-bottom: 80px;
 }
 
 .infotitle {
     font-size: 36px;
+    font-family: robotob;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.infocards {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.infocards li {
+    text-align: center;
+    margin: 30px;
+    width: 180px;
+    color: rgba(0, 0, 0, 0.644)
+}
+
+.infocards li div {
+    padding: 90px;
+    border: #3882f6 solid 4px;
+    border-radius: 18px;
 }
 
 
@@ -127,7 +164,7 @@ button {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 80px 200px;
+    padding: 80px 300px;
     align-items: center;
     color: #1f2937;
 }
