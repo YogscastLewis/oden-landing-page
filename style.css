@@ -1,3 +1,88 @@
-p {
-    color: rgb(192, 19, 19);
+@font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto-Medium.ttf);
 }
+
+@font-face {
+    font-family: robotoli;
+    src: url(./fonts/Roboto-LightItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header, .hero, .footer{
+    background-color: #1f2937 ;
+    color: #f9faf8;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 24px;
+    flex: 1, 0, auto;
+}
+
+.headul {
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    height: 300px;
+}
+
+.heroleft {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 200px;
+    align-items: center;
+    color: #1f2937;
+}
+
+.info {
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+}
+
+.infotitle {
+    font-size: 36px;
+}
+
+.mainquote {
+    font-size: 36px;
+    font-family: robotoli;
+}
+
+.author {
+    align-self: flex-end;
+    font-size: 18px;
+}
+
+.footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
