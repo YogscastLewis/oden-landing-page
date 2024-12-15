@@ -8,6 +8,21 @@
     src: url(./fonts/Roboto-LightItalic.ttf);
 }
 
+@font-face {
+    font-family: robotol;
+    src: url(./fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: robotob;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: robotom;
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,28 +40,86 @@ body{
     color: #f9faf8;
 }
 
+
+/* header section */
+
 .header {
-    height: 100px;
+    padding: 20px 250px;
     display: flex;
     justify-content: space-between;
     
+    font-family: robotob;
     font-size: 24px;
     flex: 1, 0, auto;
 }
 
 .headul {
     display: flex;
+    list-style: none;
+    gap: 20px;
 }
+
+.headul a {
+    font-family: robotol;
+}
+
+
+/* hero section */
 
 .hero {
     display: flex;
-    height: 300px;
+    padding: 100px 250px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .heroleft {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    max-width: 700px;
 }
+
+.heroleft h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.heroleft div {
+    font-family: robotom;
+}
+
+.imageplaceholder {
+    background-color: grey;
+    padding: 100px;
+}
+
+button {
+    font-size: 24px;
+    padding: 5px 30px;
+    background-color: #3882f6;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    max-width: 150px;
+}
+
+
+/* info section */
+
+
+.info {
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+}
+
+.infotitle {
+    font-size: 36px;
+}
+
+
+/* quote section */
 
 .quote {
     background-color: #e5e7eb;
@@ -59,16 +132,6 @@ body{
     color: #1f2937;
 }
 
-.info {
-    display: flex;
-    flex-direction: inherit;
-    align-items: center;
-}
-
-.infotitle {
-    font-size: 36px;
-}
-
 .mainquote {
     font-size: 36px;
     font-family: robotoli;
@@ -77,12 +140,46 @@ body{
 .author {
     align-self: flex-end;
     font-size: 18px;
+    padding-right: 20px;
 }
+
+
+/* actioncall section */
+
+.actioncall {
+    margin: 200px;
+    padding: 50px 150px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#ac1 {
+    font-size: 24px;
+}
+
+#ac2 {
+    font-family: robotol;
+}
+
+.actioncall button {
+    border: white solid;
+}
+
+
+/* footer section */
 
 .footer {
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
+.footer div {
+    font-family: robotol;
+}
